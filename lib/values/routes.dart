@@ -35,8 +35,7 @@ class DefaultRoutes {
           const TextUnderline(title: Strings.textUnderlineExampleTitle),
       Strings.aboutListTileExampleRoute: (BuildContext context) =>
           const AboutListTileExample(title: Strings.aboutListTileExampleTitle),
-      Strings.lifeCycleStateExampleRoute: (BuildContext context) =>
-          const Lifecycle(title: Strings.lifeCycleStateExampleTitle),
+      
 //      Strings.localAuthExampleRoute: (BuildContext context) =>
 //          LocalAuthExample(title: Strings.localAuthTitle),
       Strings.rotatedBoxExampleRoute: (BuildContext context) => const RotatedBoxExample(Strings.rotatedBoxTitle),

@@ -37,7 +37,7 @@ class _AnimatedCrossFadeExampleState extends State<AnimatedCrossFadeExample> {
               sizeCurve: const ElasticOutCurve(),
               firstCurve: Curves.decelerate,
               secondCurve: Curves.decelerate,
-              duration: const Duration(seconds: 3),
+              duration: const Duration(seconds: 2),
               firstChild: const FlutterLogo(
                   style: FlutterLogoStyle.horizontal, size: 100.0),
               secondChild: const FlutterLogo(size: 100.0),

@@ -22,7 +22,7 @@ class CupertinoTimerPickerExample extends StatelessWidget {
           initialTimerDuration: const Duration(hours: 1),
           onTimerDurationChanged: (Duration value) {},
           minuteInterval: 5,
-          secondInterval: 60,
+          secondInterval: 1,
         ),
       ),
     );

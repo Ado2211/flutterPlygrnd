@@ -31,7 +31,7 @@ export 'package:flutter_playground/ui/grid_view/grid_view_example.dart'
     hide Item;
 export 'package:flutter_playground/ui/gridpaper/GridPaperExample.dart';
 export 'package:flutter_playground/ui/hardwarekey/RawKeyboardDemo.dart';
-export 'package:flutter_playground/ui/lifecycle/Lifecycle.dart';
+
 export 'package:flutter_playground/ui/local_auth/LocalAuth.dart';
 export 'package:flutter_playground/ui/map/GoogleMapsExample.dart';
 export 'package:flutter_playground/ui/nestedlist/NestedList.dart';
