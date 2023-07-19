@@ -67,17 +67,25 @@ class _MyHomePageState extends State<MyHomePage> {
         physics: const BouncingScrollPhysics(),
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             SafeArea(
               child: Container(
                 margin: const EdgeInsets.all(16),
                 child: Row(
+                  
                   children: [
                     Expanded(
                       child: Text(
                         widget.title,
                         style: Theme.of(context).textTheme.titleLarge,
+                      ),
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.search),
+                      onPressed: () => showSearch(
+                        context: context,
+                        delegate: CustomSearchDelegate(store),
                       ),
                     ),
                     IconButton(
@@ -128,7 +136,8 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   //Change Dark/Light Theme
-  void onFabPressed() => Provider.of<ThemeStore>(context, listen: false).changeTheme();
+  void onFabPressed() =>
+      Provider.of<ThemeStore>(context, listen: false).changeTheme();
 
   //Open Menu Bottom Sheet
   void openMenuBottomSheet(BuildContext context) {
